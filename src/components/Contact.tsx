@@ -1,30 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    alert('Thank you for your message! I\'ll get back to you soon.');
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +24,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Email</p>
-                  <p className="text-white font-medium">contact@afiyatna.dev</p>
+                  <p className="text-white font-medium">afiyatna99@gmail.com</p>
                 </div>
               </div>
               
@@ -57,7 +34,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Phone</p>
-                  <p className="text-white font-medium">+62 123 456 7890</p>
+                  <p className="text-white font-medium">+62 856 0055 2246</p>
                 </div>
               </div>
               
@@ -67,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Location</p>
-                  <p className="text-white font-medium">Jakarta, Indonesia</p>
+                  <p className="text-white font-medium">Kendal, Jawa Tengah, Indonesia</p>
                 </div>
               </div>
             </div>
@@ -77,7 +54,7 @@ const Contact = () => {
               <h4 className="text-lg font-medium text-white mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Afiyatna"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors duration-300"
@@ -85,7 +62,7 @@ const Contact = () => {
                   <Github size={18} className="text-white" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/afiyatna-n-fauzan-3356a7230/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors duration-300"
@@ -93,7 +70,7 @@ const Contact = () => {
                   <Linkedin size={18} className="text-white" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/Afiyatna_22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors duration-300"
@@ -106,7 +83,17 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-gray-800 rounded-2xl p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              action="https://formsubmit.co/afiyatna99@gmail.com" 
+              method="POST" 
+              className="space-y-6"
+            >
+              {/* Optional: redirect after submit */}
+              <input type="hidden" name="_next" value="https://afiyatna.vercel.app/thanks.html" />
+              {/* Optional: disable captcha */}
+              <input type="hidden" name="_captcha" value="false" />
+              {/* Honeypot anti-spam */}
+              <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -116,8 +103,6 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                     placeholder="Your Name"
@@ -131,8 +116,6 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                     placeholder="your@email.com"
@@ -148,8 +131,6 @@ const Contact = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                   placeholder="Project Inquiry"
@@ -163,8 +144,6 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200 resize-none"
