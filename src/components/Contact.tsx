@@ -89,7 +89,7 @@ const Contact = () => {
               className="space-y-6"
             >
               {/* Optional: redirect after submit */}
-              <input type="hidden" name="_next" value="https://afiyatna.vercel.app/thanks.html" />
+              {/* <input type="hidden" name="_next" value="https://afiyatna.vercel.app/thanks.html" /> */}
               {/* Optional: disable captcha */}
               <input type="hidden" name="_captcha" value="false" />
               {/* Honeypot anti-spam */}
