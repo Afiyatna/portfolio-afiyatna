@@ -4,59 +4,65 @@ import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react';
 const Articles = () => {
   const articles = [
     {
-      title: 'Building Scalable React Applications with TypeScript',
-      excerpt: 'Learn how to structure large React applications using TypeScript, best practices for component architecture, and maintaining code quality at scale.',
-      date: '2024-01-15',
+      title: 'Mastering React Native',
+      excerpt: 'In this article I will explain some things that readers should know about React native.',
+      date: '2022-02-04',
       readTime: '8 min read',
-      category: 'React',
-      image: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: true
+      category: 'React Native',
+      image: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/0*gzFvK-2x_IZa6nDl',
+      featured: true,
+      url: 'https://medium.com/@afiyatna99/mastering-react-native-1e3bfb45b430'
     },
     {
-      title: 'Modern State Management in React: Redux vs Zustand',
-      excerpt: 'A comprehensive comparison of state management solutions in React, exploring when to use Redux, Zustand, or React Context.',
-      date: '2024-01-08',
+      title: 'React Native vs Flutter',
+      excerpt: 'In this article, I will explain the difference between React Native and Flutter..',
+      date: '2022-03-02',
       readTime: '12 min read',
-      category: 'State Management',
-      image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: true
+      category: 'Mobile Apps',
+      image: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/0*6ojEOMtaGP1Chj6_.png',
+      featured: true,
+      url: 'https://medium.com/@afiyatna99/react-native-vs-flutter-caee2ef96e9d'
     },
     {
-      title: 'Optimizing Web Performance: A Developer\'s Guide',
-      excerpt: 'Essential techniques for improving web application performance, from code splitting to image optimization and caching strategies.',
-      date: '2024-01-01',
+      title: 'Mastering App Development Workflow',
+      excerpt: 'In this article, I will explain the stages that must be passed in making applications in the world of work.',
+      date: '2022-02-14',
       readTime: '10 min read',
-      category: 'Performance',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: false
+      category: 'Mobile Apps',
+      image: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/0*Lj2dSr4y-xAgMR2t',
+      featured: false,
+      url: 'https://medium.com/@afiyatna99/mastering-app-development-workflow-b11e70fb507f'
     },
     {
-      title: 'Getting Started with Node.js and Express',
-      excerpt: 'A beginner-friendly guide to building REST APIs with Node.js and Express, including authentication and database integration.',
-      date: '2023-12-20',
+      title: 'How To Choose Your Learning Path In “2022”',
+      excerpt: 'In this article I will explain the learning path that you can choose to become a Programmer in 2022 :',
+      date: '2022-01-31',
       readTime: '15 min read',
-      category: 'Backend',
-      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: false
+      category: 'Programming',
+      image: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/0*CvXoj-bSPTOnAHK7',
+      featured: false,
+      url: 'https://medium.com/@afiyatna99/how-to-choose-your-learning-path-in-2022-3a0a30de84a6'
     },
     {
-      title: 'CSS Grid vs Flexbox: When to Use Which',
-      excerpt: 'Understanding the differences between CSS Grid and Flexbox, with practical examples and use cases for each layout method.',
-      date: '2023-12-15',
+      title: 'How to Install Node.js for Windows',
+      excerpt: 'In this article I will explain the steps in installing Node.js. Node js is a Javascript runtime specifically built for our PCs, so that it supports the Javascript library in it',
+      date: '2022-02-23',
       readTime: '6 min read',
-      category: 'CSS',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: false
+      category: 'Node.js',
+      image: 'https://miro.medium.com/v2/resize:fit:640/format:webp/0*8HJgXtAMIy8XEvcb',
+      featured: false,
+      url: 'https://medium.com/@afiyatna99/how-to-install-node-js-for-windows-d5fa614e842a'
     },
-    {
-      title: 'Database Design Best Practices',
-      excerpt: 'Essential principles for designing efficient and scalable databases, covering normalization, indexing, and query optimization.',
-      date: '2023-12-10',
-      readTime: '11 min read',
-      category: 'Database',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600',
-      featured: false
-    }
+    // {
+    //   title: 'Database Design Best Practices',
+    //   excerpt: 'Essential principles for designing efficient and scalable databases, covering normalization, indexing, and query optimization.',
+    //   date: '2023-12-10',
+    //   readTime: '11 min read',
+    //   category: 'Database',
+    //   image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //   featured: false,
+    //   url: 'https://medium.com/@afiyatna/database-design-best-practices-dummy'
+    // }
   ];
 
   const featuredArticles = articles.filter(article => article.featured);
@@ -125,10 +131,15 @@ const Articles = () => {
                     {article.title}
                   </h4>
                   <p className="text-slate-600 mb-4 leading-relaxed">{article.excerpt}</p>
-                  <button className="inline-flex items-center text-orange-600 font-medium hover:text-orange-700 transition-colors duration-200">
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-orange-600 font-medium hover:text-orange-700 transition-colors duration-200"
+                  >
                     Read More
                     <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                  </button>
+                  </a>
                 </div>
               </article>
             ))}
@@ -172,10 +183,15 @@ const Articles = () => {
                     {article.title}
                   </h4>
                   <p className="text-slate-600 text-sm mb-3 leading-relaxed line-clamp-3">{article.excerpt}</p>
-                  <button className="inline-flex items-center text-orange-600 font-medium text-sm hover:text-orange-700 transition-colors duration-200">
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-orange-600 font-medium text-sm hover:text-orange-700 transition-colors duration-200"
+                  >
                     Read More
                     <ArrowRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-                  </button>
+                  </a>
                 </div>
               </article>
             ))}
