@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Database, Globe, Smartphone } from 'lucide-react';
+import aboutImg from '../assets/img-about.jpg';
 
 const About = () => {
   const skills = [
@@ -43,7 +44,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/DSC_0195.jpg"
+              src={aboutImg}
               alt="Afiyatna N. Fauzan"
               className="rounded-2xl shadow-2xl w-full h-96 object-cover"
             />

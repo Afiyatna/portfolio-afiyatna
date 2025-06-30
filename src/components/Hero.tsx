@@ -32,7 +32,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12 animate-fade-in-up animation-delay-600">
             <a
-              href="https://github.com"
+              href="https://github.com/Afiyatna"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 hover:scale-110"
@@ -40,7 +40,7 @@ const Hero = () => {
               <Github size={24} className="text-white" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/afiyatna-n-fauzan-3356a7230/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 hover:scale-110"
@@ -48,7 +48,7 @@ const Hero = () => {
               <Linkedin size={24} className="text-white" />
             </a>
             <a
-              href="mailto:contact@afiyatna.dev"
+              href="mailto:afiyatna99@gmail.com"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 hover:scale-110"
             >
               <Mail size={24} className="text-white" />
