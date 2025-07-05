@@ -7,25 +7,25 @@ const About = () => {
     {
       category: 'Frontend',
       icon: <Globe className="w-6 h-6" />,
-      technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'Angular'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
       color: 'from-blue-500 to-blue-600'
     },
     {
       category: 'Backend',
       icon: <Database className="w-6 h-6" />,
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Express.js', 'FastAPI'],
+      technologies: ['Laravel', 'PHP', 'MySQL', 'Supabase', 'Node.js', 'PostgreSQL',],
       color: 'from-green-500 to-green-600'
     },
     {
       category: 'Mobile',
       icon: <Smartphone className="w-6 h-6" />,
-      technologies: ['React Native', 'Flutter', 'iOS', 'Android', 'Expo', 'Ionic'],
+      technologies: ['React Native', 'Flutter','Kotlin'],
       color: 'from-purple-500 to-purple-600'
     },
     {
       category: 'Tools & Others',
       icon: <Code className="w-6 h-6" />,
-      technologies: ['Git', 'Docker', 'AWS', 'Firebase', 'GraphQL', 'Redis'],
+      technologies: ['Git', 'Firebase', 'Figma'],
       color: 'from-orange-500 to-orange-600'
     }
   ];
@@ -36,8 +36,9 @@ const About = () => {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">About Me</h2>
           <p className="text-base sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            I'm a passionate developer with 5+ years of experience creating digital solutions 
-            that bridge the gap between design and functionality.
+          I am a student at the Universitas Sains & Teknologi Komputer majoring in S1 Information Systems. 
+          Technology open-minded, intend to implement it for improving social and economic. 
+          Very passionate about technology and follow the latest trends and techniques.
           </p>
         </div>
 

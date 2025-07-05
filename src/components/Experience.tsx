@@ -4,10 +4,10 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
+      title: 'Bootcamp Remote Worker Indonesia',
       company: 'Tech Innovations Inc.',
-      location: 'Jakarta, Indonesia',
-      period: '2022 - Present',
+      location: 'Yogyakarta, Indonesia',
+      period: '2022 - 2022',
       description: 'Leading development of enterprise-level web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting scalable solutions.',
       achievements: [
         'Increased application performance by 40% through optimization',

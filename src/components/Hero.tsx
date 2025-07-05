@@ -22,7 +22,7 @@ const Hero = () => {
             Afiyatna N. Fauzan
           </h1>
           <div className="text-base sm:text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up animation-delay-200 break-words max-w-full">
-            <span className="typewriter">Full Stack Developer & Software Engineer</span>
+            <span className="typewriter">Web Developer & Software Engineer</span>
           </div>
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up animation-delay-400">
             Passionate about creating elegant solutions to complex problems. 
