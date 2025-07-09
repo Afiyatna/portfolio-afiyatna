@@ -51,7 +51,7 @@ const About = () => {
                 className="rounded-2xl shadow-2xl w-full h-full object-cover border-4 border-orange-100"
                 style={{ aspectRatio: '4/3' }}
               />
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs px-4 py-1 rounded-full shadow-lg font-semibold tracking-wide hidden sm:block">Full Stack Developer</div>
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs px-4 py-1 rounded-full shadow-lg font-semibold tracking-wide hidden sm:block">Web Developer</div>
             </div>
           </div>
           <div className="space-y-6 order-2 lg:order-none">
