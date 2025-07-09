@@ -15,30 +15,30 @@ const Experience = () => {
         'Implemented CI/CD pipelines reducing deployment time by 60%'
       ]
     },
-    {
-      title: 'Full Stack Developer',
-      company: 'Digital Solutions Co.',
-      location: 'Bandung, Indonesia',
-      period: '2020 - 2022',
-      description: 'Developed and maintained web applications for various clients in e-commerce, healthcare, and education sectors using modern JavaScript frameworks.',
-      achievements: [
-        'Built 15+ client applications from concept to deployment',
-        'Improved code quality by implementing testing strategies',
-        'Reduced bug reports by 35% through better QA processes'
-      ]
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'StartupHub',
-      location: 'Yogyakarta, Indonesia',
-      period: '2019 - 2020',
-      description: 'Focused on creating responsive and interactive user interfaces using React, Vue.js, and modern CSS frameworks.',
-      achievements: [
-        'Developed mobile-first responsive designs',
-        'Collaborated with UX/UI designers on user experience optimization',
-        'Implemented accessibility standards across all projects'
-      ]
-    }
+    // {
+    //   title: 'Full Stack Developer',
+    //   company: 'Digital Solutions Co.',
+    //   location: 'Bandung, Indonesia',
+    //   period: '2020 - 2022',
+    //   description: 'Developed and maintained web applications for various clients in e-commerce, healthcare, and education sectors using modern JavaScript frameworks.',
+    //   achievements: [
+    //     'Built 15+ client applications from concept to deployment',
+    //     'Improved code quality by implementing testing strategies',
+    //     'Reduced bug reports by 35% through better QA processes'
+    //   ]
+    // },
+    // {
+    //   title: 'Frontend Developer',
+    //   company: 'StartupHub',
+    //   location: 'Yogyakarta, Indonesia',
+    //   period: '2019 - 2020',
+    //   description: 'Focused on creating responsive and interactive user interfaces using React, Vue.js, and modern CSS frameworks.',
+    //   achievements: [
+    //     'Developed mobile-first responsive designs',
+    //     'Collaborated with UX/UI designers on user experience optimization',
+    //     'Implemented accessibility standards across all projects'
+    //   ]
+    // }
   ];
 
   return (
